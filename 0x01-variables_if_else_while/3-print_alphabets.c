@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <string.h>
+#include <ctype.h>
 
 /**
  * main - Entry point
@@ -11,17 +11,29 @@ int main(void)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	int k = 0;
 	int c;
+	int k;
+	char lwr;
+	char upr;
 
-	c = strlen(str);
-	while (k <= c)
+	k = strlen(str);
+	while (c <= k)
 	{
-		str[i] = tolower(str[i]);
-		putchar(str[i]);
-		i++;
+		lwr = tolower(str[i]);
+		putchar(lwr);
 		k++;
+		i++;
+	}
+	k = 0;
+	i = 0;
+	while (c <= k)
+	{
+		upr = toupper(str[i]);
+		putchar(upr);
+		k++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
 }
+
