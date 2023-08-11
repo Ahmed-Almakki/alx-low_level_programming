@@ -4,19 +4,23 @@
 
 /**
  * main Entry point
- * return: Always 0 Success
+ *
+ * return: Always 0 (Success)
  */
 int main(void)
 {
 	char str[] = "AbcdEfgHijKlmNopQrsTuvWxyZ";
 	int i = 0;
 	int k = 0;
+	int c;
 
-	while (k <= strlen(str))
+	c = strlen(str);
+	while (k < c)
 	{
 		str[i] = tolower(str[i]);
 		putchar(str[i]);
 		i++;
+		k++;
 	}
 	return (0);
 }
