@@ -24,8 +24,8 @@ int main(void)
 		else
 		{
 			putchar(lwr);
+			i++;
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
