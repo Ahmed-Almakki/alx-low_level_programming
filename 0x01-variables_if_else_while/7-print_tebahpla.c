@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	char str[] = "abcdefghijklmnopqrstuvwxyz ";
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	char ch;
 	int ln;
 
 	ln = strlen(str);
-	while (ln > 0)
+	while (ln > -1)
 	{
 		ch = tolower(str[ln]);
 		putchar(ch);
