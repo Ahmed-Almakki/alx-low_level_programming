@@ -13,7 +13,7 @@ int main(void)
 	int ln;
 
 	ln = strlen(str);
-	while (ln >= 0)
+	while (ln > 0)
 	{
 		ch = tolower(str[ln]);
 		putchar(ch);
