@@ -13,6 +13,7 @@ int main(void)
 	int ln;
 
 	ln = strlen(str);
+	ln = ln - 1;
 	while (ln > -1)
 	{
 		ch = tolower(str[ln]);
