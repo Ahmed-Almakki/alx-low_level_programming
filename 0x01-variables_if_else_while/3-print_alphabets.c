@@ -11,7 +11,7 @@ int main(void)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
-	int c;
+	int c = 0;
 	int k;
 	char lwr;
 	char upr;
@@ -21,16 +21,16 @@ int main(void)
 	{
 		lwr = tolower(str[i]);
 		putchar(lwr);
-		k++;
+		c++;
 		i++;
 	}
-	k = 0;
+	c = 0;
 	i = 0;
 	while (c <= k)
 	{
 		upr = toupper(str[i]);
 		putchar(upr);
-		k++;
+		c++;
 		i++;
 	}
 	putchar('\n');

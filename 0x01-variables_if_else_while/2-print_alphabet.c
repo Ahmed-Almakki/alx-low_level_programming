@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char str[] = "abcdefghijklmnopqrstuvwxyz";
+	char str[] = "abcdefghijklmnopqrstuvwxyz\0";
 	int i = 0;
 	int k = 0;
 	int c;
