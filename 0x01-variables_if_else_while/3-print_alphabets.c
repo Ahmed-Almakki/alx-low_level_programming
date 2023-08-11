@@ -17,7 +17,7 @@ int main(void)
 	char upr;
 
 	k = strlen(str);
-	while (c <= k)
+	while (c < k)
 	{
 		lwr = tolower(str[i]);
 		putchar(lwr);
@@ -26,7 +26,7 @@ int main(void)
 	}
 	c = 0;
 	i = 0;
-	while (c <= k)
+	while (c < k)
 	{
 		upr = toupper(str[i]);
 		putchar(upr);

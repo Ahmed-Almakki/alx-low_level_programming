@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	char str[] = "abcdefghijklmnopqrstuvwxyz\0";
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 	int k = 0;
 	int c;
 
 	c = strlen(str);
-	while (k <= c)
+	while (k < c)
 	{
 		str[i] = tolower(str[i]);
 		putchar(str[i]);
