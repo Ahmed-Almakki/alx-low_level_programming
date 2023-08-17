@@ -2,7 +2,7 @@
 
 /**
  * _isupper - test if character is upper or not
- * @c : character 
+ * @c : character
  *
  * Return: 0 or 1
  */
