@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <time.h>
 
 /**
  * main - ests function that prints if integer is positive or negative
