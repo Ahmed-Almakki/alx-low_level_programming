@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - ests function that prints if integer is positive or negative
+* main - Test function for positive or negative
 * Return: 0
 */
 
@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	i = 98 % 2;
+	i = 0;
 	positive_or negative(i);
 	return (0);
 }
