@@ -1,9 +1,10 @@
 #include <ctype.h>
 
 /**
- * function test if is upper
- * Return : 0 if is upper
- * Return : 1 else
+ * _isupper - test if character is upper or not
+ * @c : character 
+ *
+ * Return: 0 or 1
  */
 
 int _isupper(char c)
