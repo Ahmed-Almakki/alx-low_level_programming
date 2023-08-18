@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more numbers - function
+ * more_numbers - function
  * Return: notjing
  */
 void more_numbers(void)
