@@ -6,7 +6,7 @@ nclude <stdlib.h>
  * positive_or_negative : function
  * Retrun: 0
  */
-int positive_or_negative(void)
+void positive_or_negative(void)
 {
 	int n;
 
