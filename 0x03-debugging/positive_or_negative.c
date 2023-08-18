@@ -4,22 +4,15 @@ nclude <stdlib.h>
 
 /**
  * positive_or_negative : function
+ * @i : first operand
  * Retrun: 0
  */
 void positive_or_negative(int i)
 {
 
-	if (i  <  0)
+	if (i < 0)
 	{
 		printf("%d is negative", i);
-	}
-	else if (i == 0)
-	{
-		printf("%d is zero", i);
-	}
-	else if (i  >  0)
-	{
-		printf("%d is positive", i);
 	}
 	return (0);
 }
