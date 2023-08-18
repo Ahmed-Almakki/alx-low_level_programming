@@ -6,23 +6,20 @@ nclude <stdlib.h>
  * positive_or_negative : function
  * Retrun: 0
  */
-void positive_or_negative(void)
+void positive_or_negative(int i)
 {
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n  <  0)
+	if (i  <  0)
 	{
-		printf("%d is negative", n);
+		printf("%d is negative", i);
 	}
-	else if (n == 0)
+	else if (i == 0)
 	{
-		printf("%d is zero", n);
+		printf("%d is zero", i);
 	}
-	else if (n  >  0)
+	else if (i  >  0)
 	{
-		printf("%d is positive", n);
+		printf("%d is positive", i);
 	}
 	return (0);
 }
