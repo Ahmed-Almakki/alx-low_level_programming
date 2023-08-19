@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * maxPrimeFactors : function
- * @n : operand
- * Return: maxnumber
+ * main - Entry
+ * Return: 0
  */
-int maxPrimeFactors(long int n)
+int main(void)
 {
+	long int n = 612852475143;
 	long int maxPrime = -1;
 	int i;
 
@@ -28,17 +28,6 @@ int maxPrimeFactors(long int n)
 	{
 		maxPrime = n;
 	}
-	return (maxPrime);
-}
-
-/**
- * main - Entry
- * Return: 0
- */
-int main(void)
-{
-	long int n = 612852475143;
-
-	printf("%d\n", maxPrimeFactors(n));
+	printf("%ld\n", maxPrime);
 	return (0);
 }
