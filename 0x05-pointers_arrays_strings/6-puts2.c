@@ -1,25 +1,25 @@
-#include <string.h>
 #include "main.h"
+#include <string.h>
+
 
 /**
  * puts2 - fun
  * @str: oper
  * Return: 0
  */
-
 void puts2(char *str)
 {
 	int len;
-	int i;
+	int i = 0;
 
-	str = "0123456789";
 	len = strlen(str);
 	while (i < len)
 	{
 		if (i % 2 == 0)
 		{
-			putchar(str[i]);
+			_putchar(str[i]);
 		}
 		i++;
 	}
+	_putchar('\n');
 }
