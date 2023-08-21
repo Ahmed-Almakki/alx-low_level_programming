@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * reset_to_98 - function
- * @&n : operand
+ * @n : operand
  * Return: 0
  */
 

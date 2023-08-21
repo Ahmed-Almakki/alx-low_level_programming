@@ -2,8 +2,8 @@
 
 /**
  * swap_int - function
- * @*a: pointer a
- * @*b: pointer b
+ * @a: pointer a
+ * @b: pointer b
  * Return: 0
  */
 

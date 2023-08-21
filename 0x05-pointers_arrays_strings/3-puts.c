@@ -3,11 +3,11 @@
 
 /**
  * _puts - function
- * @*str : pointer
+ * @str : pointer
  * Return: 0
  */
 
 void _puts(char *str)
 {
-	puts(str);
+	_putchar(str);
 }

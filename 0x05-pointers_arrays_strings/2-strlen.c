@@ -3,7 +3,7 @@
 
 /**
  *  _strlen - function
- *  @*s: pointer
+ *  @s: pointer
  *  Return: length
  */
 
