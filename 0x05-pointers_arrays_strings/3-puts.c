@@ -9,5 +9,13 @@
 
 void _puts(char *str)
 {
-	_putchar(*str);
+	int i;
+	int len;
+
+	len = strlen(str);
+	while (i < len)
+	{
+		_putchar(str[i]);
+		i++;
+	}
 }

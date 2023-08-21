@@ -2,20 +2,21 @@
 #include <string.h>
 
 /**
- * print_rev - function
- * @s : pointer
+ * rev_string - fun
+ * @s : operand
  * Return: 0
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int len;
-	int i;
+	int i = 0;
 
 	len = strlen(s);
-	for (i = len - 1; i >= 0; i--)
+	while (i < len)
 	{
 		_putchar(s[i]);
+		i++;
 	}
 	_putchar('\n');
 }
