@@ -13,9 +13,9 @@ void _puts(char *str)
 	int len;
 
 	len = strlen(str);
-	while (i < len)
+	for (i = 0; i < len; i++)
 	{
 		_putchar(str[i]);
-		i++;
 	}
+	_putchar('\n');
 }
