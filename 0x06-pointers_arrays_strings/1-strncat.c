@@ -20,6 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	if (n > size)
 		n = size;
 	if (n == 0)
+		dest[len] = '\n';
 		return (dest);
 	for (i = 0; i < n; i++)
 	{
