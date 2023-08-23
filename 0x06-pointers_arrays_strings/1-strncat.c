@@ -4,7 +4,7 @@
 /**
  * _strncat - fun
  * @dest : op one
- * @dest : op two
+ * @src: op two
  * @n : number
  * Return: sting
  */
@@ -19,6 +19,8 @@ char *_strncat(char *dest, char *src, int n)
 	size = sizeof(dest);
 	if (n > size)
 		n = size;
+	if (n == 0)
+		return (dest);
 	for (i = 0; i < n; i++)
 	{
 		dest[len] = src[i];
