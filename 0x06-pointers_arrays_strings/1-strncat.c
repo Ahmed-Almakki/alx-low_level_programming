@@ -18,10 +18,14 @@ char *_strncat(char *dest, char *src, int n)
 	len = strlen(dest);
 	size = sizeof(dest);
 	if (n > size)
+	{
 		n = size;
+	}
 	if (n == 0)
+	{
 		dest[len] = '\n';
 		return (dest);
+	}
 	for (i = 0; i < n; i++)
 	{
 		dest[len] = src[i];
