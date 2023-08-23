@@ -1,26 +1,23 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * _atoi - fun
- * @s: operand
- * Return: integers
+ * @s: ope
+ * Return: int
  */
 
 int _atoi(char *s)
 {
-	int v;
-	int len;
+	unsigned int n = 0;
+	int x = 1;
 
-	len = strlen(s);
-	if (len == 0)
-	{
-		return (0);
-	}
-	else
-	{
-		v = atoi(s);
-		return (v);
-	}
+	do {
+		if (*s == '-')
+			x *= -1;
+		else if ((*s >= '0') && (*s <= '9'))
+			n = (n * 10) + (*s - '0');
+		else if (n > 0)
+			break;
+	} while (*s++);
+	return (n * x);
 }
