@@ -2,7 +2,7 @@
 /**
  * factorial - fun
  * @n : op
- * Return : int
+ * Return: int
  */
 
 int factorial(int n)
