@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _strlen_recursion - fun
+ * _strlen_recursion - fun
  * @s : o
  * Return: integiers
  */
