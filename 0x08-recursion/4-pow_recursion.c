@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int poww - fun
+ * poww - fun
  * @x: param
  * @y: plaram
  * @i: param
@@ -16,7 +16,7 @@ int poww(int x, int y, int i)
 }
 
 /**
- * int _pow_recursion - fun
+ * _pow_recursion - fun
  * @x: param
  * @y: param
  * Return: int
@@ -28,11 +28,17 @@ int _pow_recursion(int x, int y)
 
 	v = 1;
 	if (y == 1)
+	{
 		return (x);
+	}
 	else if (y == 0)
+	{
 		return (1);
+	}
 	else if (y < 0)
+	{
 		return (-1);
+	}
 	else
 	{
 		j = poww(x, y, v);
