@@ -11,5 +11,7 @@ int length(int i, char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
 int poww(int x, int y, int i);
+int sqt(int n, int i, int k);
+int _sqrt_recursion(int n);
 
 #endif
