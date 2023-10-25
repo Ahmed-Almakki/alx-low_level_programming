@@ -9,7 +9,7 @@
 
 int length(int i, char *s)
 {
-	if (*s =='\0')
+	if (*s == '\0')
 	{
 		return (i);
 	}
