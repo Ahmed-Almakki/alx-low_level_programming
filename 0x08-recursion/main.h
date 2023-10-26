@@ -13,7 +13,7 @@ int _pow_recursion(int x, int y);
 int poww(int x, int y, int i);
 int sqt(int n, int i, int k);
 int _sqrt_recursion(int n);
-int prim(int n, int i, int j);
+int prim(int n, int i);
 int is_prime_number(int n);
 int pal(char *s, int u, int d);
 int is_palindrome(char *s);

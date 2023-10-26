@@ -4,29 +4,21 @@
  * prim - fun
  * @n: param
  * @i: param
- * @j: param
  * Return: int
  */
-int prim(int n,int i, int j)
+int prim(int n,int i)
 {
-	if (n == j)
+	if (n == i)
+	{
+		return (1);
+	}
+	else if (n % i == 0 && i != n)
 	{
 		return (0);
 	}
-	if (n % i == 0)
-	{
-		if (n > i)
-		{
-			return (0);
-		}
-		else
-		{
-			prim(n, (i + 1), (j + 1));
-		}
-	}
 	else
 	{
-		return (prim(n, (i + 1), (j + 1)));
+		return (prim(n, (i + 1)));
 	}
 }
 /**
@@ -36,17 +28,15 @@ int prim(int n,int i, int j)
  */
 int is_prime_number(int n)
 {
-	int j;
 	int h;
 	int i;
 
 	i = 2;
-	j = 1;
 	if (n == 1 || n < 0)
 		return (0);
 	else
 	{
-		h = prim(n, i, j);
+		h = prim(n, i);
 		return (h);
 	}
 }
