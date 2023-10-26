@@ -30,7 +30,9 @@ int is_prime_number(int n)
 
 	i = 2;
 	if (n == 1 || n < 0)
+	{
 		return (0);
+	}
 	else
 	{
 		h = prim(n, i);
