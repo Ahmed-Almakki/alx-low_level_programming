@@ -6,7 +6,7 @@
  * @i: param
  * Return: int
  */
-int prim(int n,int i)
+int prim(int n, int i)
 {
 	if (n == i)
 	{
@@ -16,10 +16,7 @@ int prim(int n,int i)
 	{
 		return (0);
 	}
-	else
-	{
 		return (prim(n, (i + 1)));
-	}
 }
 /**
  * is_prime_number - fun
