@@ -4,7 +4,7 @@
 /**
  * main - fun
  * @argc: param
- * @argv: par
+ * @argv: param
  * Return: int
  */
 
@@ -14,8 +14,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		argv[i] = argv[i];
+		printf("%s\n", argv[i]);
 	}
-	printf("%d\n", (argc - 1));
 	return (0);
 }
