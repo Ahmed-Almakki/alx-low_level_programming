@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	res = 1;
 	agc = argc - 1;
-	if(agc < 2)
+	if (agc < 2)
 	{
 		printf("Error\n");
 		return (1);
