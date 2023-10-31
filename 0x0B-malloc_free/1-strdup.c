@@ -31,12 +31,14 @@ char *_strdup(char *str)
 	int len;
 
 	len = lenn(str);
-	t = malloc((sizeof(*str)) * len);
+	t = malloc((sizeof(str)) * len);
 	if (t == NULL)
+	{
 		return (NULL);
+	}
 	else
 	{
-		for (i = 0; i < len; i++)
+		for (i = 0; i <= len; i++)
 		{
 			t[i] = str[i];
 		}
