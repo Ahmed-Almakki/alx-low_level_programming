@@ -6,19 +6,21 @@
  * create_array - fun
  * @size: param
  * @c: param
+ * Return: char
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *t;
 
-	t = malloc(size);
+	t = malloc(sizeof(size));
 	if ((t == NULL) || (sizeof(size) == 0))
+	{
 		return (NULL);
+	}
 	else
 	{
-		t[0] = c;
-		free (t);
+		*t = c;
 		return (t);
 	}
 }
