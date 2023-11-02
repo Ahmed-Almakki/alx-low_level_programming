@@ -32,7 +32,7 @@ char *_strdup(char *str)
 
 	len = lenn(str) + 1;
 	t = malloc((sizeof(*str)) * len);
-	if (str == NULL)
+	if (str[0] == NULL)
 	{
 		return (NULL);
 	}
