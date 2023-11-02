@@ -1,53 +1,52 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * lenn - fun
- * @s: char
- * Return: int
+ * str_concat - function that concatenates two strings.
+ *              if NULL is passed, treat it as an empty string
+ *              The function should return NULL on failure
+ *
+ * @s1: This is the output string
+ * @s2: This is the input string
+ *
+ * Return: The returned pointer should point to a newly allocated space in
+ *         memory which contains the contents of s1, followed by the contents 
+ *         of s2, and null terminated
  */
-int lenn(char *s)
-{
-	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		continue;
-	}
-	return (i);
-}
-
-/**
- * str_concat - fun
- * @s1:param
- * @s2: paam
- * Return: char
- */
 char *str_concat(char *s1, char *s2)
 {
-	char *t;
-	int i;
-	int j;
-	int size;
+	int a, b;
+	char *s;
 
-	size = lenn(s1) + lenn(s2);
-	t = malloc(size);
-	if (t == NULL)
+	if (s1 == NULL)
 	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+	}
+	for (b = 0; s2[b] != '\0'; b++)
+	{
+	}
+
+	s = (char *)  malloc(((a + b) + 1) * sizeof(char));
+
+	if (s == NULL)
 		return (NULL);
-	}
-	else
+	for (a = 0; s1[a] != '\0'; a++)
 	{
-		for (i = 0; i < lenn(s1); i++)
-		{
-			t[i] = s1[i];
-		}
-		for (j = 0; j < lenn(s2); j++)
-		{
-			t[i] = s2[j];
-			i++;
-		}
+		s[a] = s1[a];
 	}
-	t[size] = '\0';
-	return (t);
+	for (b = 0; s2[b] != '\0'; b++)
+	{
+		s[a] = s2[b];
+		a++;
+	}
+	return (s);
 }
