@@ -31,11 +31,11 @@ char *_strdup(char *str)
 	int len;
 
 	len = lenn(str) + 1;
-	t = malloc((sizeof(*str)) * len);
-	if (str[0] == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
+	t = malloc((sizeof(*str)) * len);
 	if (t == NULL)
 	{
 		return (NULL);
