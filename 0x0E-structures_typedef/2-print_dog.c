@@ -9,22 +9,21 @@
  */
 void print_dog(struct dog *d)
 {
-	char nn[];
+	char nn[] = "nil";
 
-	nn = "(nil)";
 	d = malloc(sizeof(struct dog));
 	if (d == NULL)
-		printf("");
-	if (d.name == NULL)
+		return;
+	if ((*d).name == NULL)
 		printf("Name: %s\n", nn);
 	else
-		printf("Name: %s\n", d.name);
-	if (d.age == NULL)
+		printf("Name: %s\n", (*d).name);
+	if ((*d).age < 0)
 		printf("Age: %s\n", nn);
 	else
-		printf("Age: %d\n", d.age);
-	if (d.owner == NULL)
+		printf("Age: %f\n", (*d).age);
+	if ((*d).owner == NULL)
 		printf("Owner: %s\n", nn);
 	else
-		printf("Owner: %s\n", d.owner);
+		printf("Owner: %s\n", (*d).owner);
 }
