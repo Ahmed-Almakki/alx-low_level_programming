@@ -6,7 +6,6 @@
  * @name: par
  * @age: param
  * @owner: param
- * Return: strucn
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
