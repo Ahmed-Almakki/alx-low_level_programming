@@ -3,6 +3,7 @@
 /**
  * sum_them_all - fun
  * @n:param
+ * @...: params
  * Return: int
  */
 int sum_them_all(const unsigned int n, ...)
