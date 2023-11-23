@@ -1,6 +1,27 @@
 #include "main.h"
 
 /**
+ * _pow - fun
+ * @base: pa
+ * @expon: para
+ * Return:  int
+ */
+int _pow(double base, int expon)
+{
+	int res = 1;
+	int i;
+
+	if (expon > 0)
+	{
+		for (i = 0; i < expon; i++)
+		{
+			res = res * base;
+		}
+	}
+	return (res);
+}
+
+/**
  * binary_to_uint - fun
  * @b: parameter
  * Return: int
