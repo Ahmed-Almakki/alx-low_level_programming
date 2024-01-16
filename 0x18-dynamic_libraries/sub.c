@@ -1,7 +1,7 @@
 #include "list.h"
-int sub(int a, int b)
+int sub(long int a, long int b)
 {
-	int res;
+	long int res;
 
 	res = a - b;
 	return (res);
