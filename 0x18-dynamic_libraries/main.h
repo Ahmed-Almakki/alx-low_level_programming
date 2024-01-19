@@ -1,6 +1,6 @@
-#define MAIN_H
 #ifndef MAIN_H
-#define EXIT_SUCCESS
+#define MAIN_H
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
