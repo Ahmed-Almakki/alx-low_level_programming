@@ -5,3 +5,4 @@ int main(){
 	schol();
 	return (0);
 }
+/* School */
