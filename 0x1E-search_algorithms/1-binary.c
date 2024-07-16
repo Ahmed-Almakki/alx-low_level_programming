@@ -1,4 +1,3 @@
-#include <stdbool.h>
 #include "search_algos.h"
 
 /**
@@ -16,7 +15,7 @@ int binary_search(int *array, size_t size, int value)
 	size_t beg = 0;
 	size_t j;
 
-	while (true)
+	while (beg <= last)
 	{
 		printf("Searching in array:");
 		for (j = beg; j < last; j++)
