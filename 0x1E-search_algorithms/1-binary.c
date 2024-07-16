@@ -33,15 +33,17 @@ int binary_search(int *array, size_t size, int value)
 				i = -1;
 				break;
 			}
-		}		if (array[i] == value)
+		}
+
+		if (array[i] == value)
 		{
 			i = (int) i;
 			break;
 		}
-		if (value < array[i])
+		else if (value < array[i])
 			last = (size_t)i - 1;
-		if (value > array[i])
-			beg = (size_t)i + 1;	
+		else
+			beg = (size_t)i + 1;
 	}
 	return (i);
 }
